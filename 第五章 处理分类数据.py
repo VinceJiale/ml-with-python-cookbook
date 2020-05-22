@@ -11,7 +11,7 @@ feature = np.array([['Texas'],
 one_hot=LabelBinarizer()    # 创建one-hot 编码器
 one_hot.fit_transform(feature)  #对特征进行one-hot 编码
 
-one_hot.classes_    #array(['California', 'Delaware', 'Texas'], dtype='<U10') 可以用classes_方法输出分类
+one_hot.classes_    # array(['California', 'Delaware', 'Texas'], dtype='<U10') 可以用classes_ 方法输出分类
 
 one_hot.inverse_transform(one_hot.transform(feature))   #对one-hot 编码 逆转换
 
@@ -71,7 +71,7 @@ dictvectorizer.fit_transform(doc_word_counts)   #将词频字典列表转换成�
 
 
 # 5.4 填充缺失的分类值
-# [1]最理想的方法是训练一个机器学习分类器来预测缺失值，通常使用KNN分类器
+# [1]最理想的方法 是训练一个机器学习分类器来预测缺失值，通常使用KNN分类器
 import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -88,14 +88,17 @@ trained_model = clf.fit(X[:,1:],X[:,0])
 imputed_values =trained_model.predict(X_with_nan[:,1:])   #预测缺失值的分类
 
 X_with_imputed=np.hstack((imputed_values.reshape(-1,1),X_with_nan[:,1:]))  #将所预测的分类和它的其他特征连接起来
+# reshape(-1,1) 中的（-1，1） 指的是 无所谓多少行<自动填充> 要1列。 反之（1，-1）为无所谓多少列，要1行
 
 np.vstack((X_with_imputed,X))   #连接两个特征矩阵
 
-# [2]用特征中出现次数最多的值来填充缺失值
+# [2]用特征中出现次数最多的值来填充缺失值         相对简单的方法
 from sklearn.preprocessing import Imputer
 X_complete = np.vstack((X_with_nan,X))
 imputer = Imputer(strategy='most_frequent',axis=0)
 imputer.fit_transform(X_complete)
+
+# 最好添加一个二元特征来标识观察值中是否包含填充值
 
 # 5.5 处理不均衡分类
 import numpy as np
@@ -106,22 +109,22 @@ iris = load_iris()
 features = iris.data
 target = iris.target
 features=features[40:,:]
-target = target[40:] #移除前40个观察值
+target = target[40:] # 移除前40个观察值
 
-target = np.where((target == 0),0,1)    #创建二元目标向量来标识观察值是否为类别0
+target = np.where((target == 0),0,1)    # 创建二元目标向量来标识观察值是否为类别0
 target
 
-weights={0:.9,1:.1} #创建权重
-RandomForestClassifier(class_weight=weights)    #创建带权重的随机森林分类器
+weights={0:.9,1:.1} # 创建权重
+RandomForestClassifier(class_weight=weights)    # 创建带权重的随机森林分类器
 
-RandomForestClassifier(class_weight="balanced") #可以传入参数balanced，会自动创建与分类的频数成反比的权重。
-                                                #训练一个带均衡分类权重的随机森林分类器
+RandomForestClassifier(class_weight="balanced")  # 可以传入参数balanced，会自动创建与分类的频数成反比的权重。
+                                                 # 训练一个带均衡分类权重的随机森林分类器
 
-i_class0 = np.where(target ==0)[0]  #给每个分类的观察值打标签
+i_class0 = np.where(target ==0)[0]  # 给每个分类的观察值打标签
 i_class1 = np.where(target ==1)[0]
 
 n_class0 = len(i_class0)
-n_class1 = len(i_class1)    #确认每个分类观察值的数量
+n_class1 = len(i_class1)    # 确认每个分类观察值的数量
 
 i_class1_downsampled = np.random.choice(i_class1,size=n_class0,replace=False)   #对于每个分类为0的观察值，从分类为1的数据中进行无放回的随机采样
 
