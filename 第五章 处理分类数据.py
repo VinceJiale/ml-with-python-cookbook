@@ -129,6 +129,7 @@ n_class1 = len(i_class1)    # 确认每个分类观察值的数量
 i_class1_downsampled = np.random.choice(i_class1,size=n_class0,replace=False)   #对于每个分类为0的观察值，从分类为1的数据中进行无放回的随机采样
 
 np.hstack((target[i_class0],target[i_class1_downsampled]))  #将分类为0的目标向量和下采样的分类为1的目标向量连接起来
+np.vstack((features[i_class0,:],features[i_class1_downsampled,:]))[0:5]
 
 # 另一种选择 是对占多数的分类进行上采样   针对占多数的分类，从占小数的分类中进行有放回的随机采样
 i_class0_upsampled = np.random.choice(i_class0,size=n_class1,replace=True)  #对于每个分类为1的观察值，从分类为0的数据中进行有放回的随机采样

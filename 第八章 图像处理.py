@@ -24,6 +24,7 @@ import cv2
 
 image = cv2.imread("/Users/caleb/Documents/Python Scripts/python 机器学习手册/simulated_datasets-master/images/plane.jpg", cv2.IMREAD_GRAYSCALE)
 cv2.imwrite("/Users/caleb/Documents/Python Scripts/python 机器学习手册/simulated_datasets-master/images/plane_new.jpg",image)
+# 保存的图像格式由文件扩展名决定,imwrite将直接覆盖现有文件,而不会输出一条错误消息或请求你确认。
 
 # 8.3 调整图像大小
 import cv2
@@ -88,6 +89,7 @@ image_enhanced = cv2.equalizeHist(image)    # 增强图像  灰色图
 plt.imshow(image_enhanced, cmap='gray'), plt.axis("off")
 plt.show()
 
+# 如果equalizeHist 要应用彩色图需要先将格式转换为YUV格式
 image_bgr = cv2.imread("/Users/caleb/Documents/Python Scripts/python 机器学习手册/simulated_datasets-master/images/plane.jpg")    #加载图像
 image_yuv = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2YUV)  # 转换成YUV格式
 image_yuv[:, :, 0] = cv2.cv2.equalizeHist(image_yuv[:, :, 0])   # 对图像应用直方图均衡
@@ -184,6 +186,7 @@ plt.show()
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+
 image_gray = cv2.imread("/Users/caleb/Documents/Python Scripts/python 机器学习手册/simulated_datasets-master/images/plane_256x256.jpg")
 
 median_intensity = np.median(image_gray)    # 计算像素强度的中位值

@@ -153,4 +153,6 @@ tfidf = TfidfVectorizer()
 feature_matrix = tfidf.fit_transform(text_data)
 
 feature_matrix.toarray()
+
+tfidf.get_feature_names()   # 知道排序,与vocabulary方法效果类似
 tfidf.vocabulary_
