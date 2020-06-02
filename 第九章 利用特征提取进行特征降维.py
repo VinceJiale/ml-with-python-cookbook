@@ -13,8 +13,10 @@ digits = datasets.load_digits()     # 加载数据
 features = StandardScaler().fit_transform(digits.data)      # 标准化特征矩阵
 
 pca = PCA(n_components=0.99, whiten=True)   # 创建可以保留99%信息量(用方差表示的）PCA
-# PCA参数: n_components 有两种含义:1)由具体的参数值决定。如果值大于1,则n_components 将会返回和这个值相同数量的特征，将会带来一个问题
-# 如何选择最合适的特征数量。 2)值在0和1之间，pca就会维持一定信息量(在算法中,用方差代表信息量)的最少特征数。 通常情况下,n_components 取值
+# PCA参数: n_components 有两种含义:
+# 1)由具体的参数值决定。如果值大于1,则n_components 将会返回和这个值相同数量的特征，将会带来一个问题
+# 如何选择最合适的特征数量。
+# 2)值在0和1之间，pca就会维持一定信息量(在算法中,用方差代表信息量)的最少特征数。 通常情况下,n_components 取值
 # 0.95 或 0.99,意味着保留95%或99%的原始特征信息量。参数whiten=True,表示对每一个主成分都进行转换以保证他们的平均值为0, 方差为1。另一个
 # 参数是svd_solver="randomized",代表使用随机方法找到第一个主成分。(这种方法通常速度很快)
 
@@ -30,7 +32,7 @@ print("Reduced number of features:", features_pca.shape[1])
 from sklearn.decomposition import PCA, KernelPCA
 from sklearn.datasets import make_circles
 
-features, _ = make_circles(n_samples=1000, random_state=1, noise=0.1, factor= 0.1)   # 创建线性不可分数据
+features, _ = make_circles(n_samples=1000, random_state=1, noise=0.1, factor=0.1)   # 创建线性不可分数据
 kpca = KernelPCA(kernel="rbf", gamma=15, n_components=1)   # 应用基于径向基函数(Radius Basis Function,RBF)核的Kernel PCA方法
 features_kpca = kpca.fit_transform(features)
 

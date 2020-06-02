@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9335ff4-4ed7-4d2c-92c4-6518dcc8290e" name="Default Changelist" comment="TEST">
+    <list default="true" id="e9335ff4-4ed7-4d2c-92c4-6518dcc8290e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python 机器学习手册.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python 机器学习手册.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/第五章 处理分类数据.py" beforeDir="false" afterPath="$PROJECT_DIR$/第五章 处理分类数据.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/第八章 图像处理.py" beforeDir="false" afterPath="$PROJECT_DIR$/第八章 图像处理.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/第六章 处理文本.py" beforeDir="false" afterPath="$PROJECT_DIR$/第六章 处理文本.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iris.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/iris.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第九章 利用特征提取进行特征降维.py" beforeDir="false" afterPath="$PROJECT_DIR$/第九章 利用特征提取进行特征降维.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第十一章 模型评估.py" beforeDir="false" afterPath="$PROJECT_DIR$/第十一章 模型评估.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第十七章 支持向量机.py" beforeDir="false" afterPath="$PROJECT_DIR$/第十七章 支持向量机.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第十二章 模型选择.py" beforeDir="false" afterPath="$PROJECT_DIR$/第十二章 模型选择.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第十五章 KNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/第十五章 KNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第十章 使用特征选择进行降维.py" beforeDir="false" afterPath="$PROJECT_DIR$/第十章 使用特征选择进行降维.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,6 +35,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -52,6 +67,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="第十四章 树和森林" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python 机器学习手册" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/第十四章 树和森林.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="第十二章 模型选择" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python 机器学习手册" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/第十二章 模型选择.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="python 机器学习手册" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,11 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.第六章 处理文本" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -93,7 +147,16 @@
       <workItem from="1590043528252" duration="5526000" />
       <workItem from="1590109965473" duration="1729000" />
       <workItem from="1590113098970" duration="6586000" />
-      <workItem from="1590126607942" duration="9747000" />
+      <workItem from="1590126607942" duration="11112000" />
+      <workItem from="1590397265814" duration="779000" />
+      <workItem from="1590654816227" duration="1677000" />
+      <workItem from="1590718639465" duration="13618000" />
+      <workItem from="1590742176564" duration="1097000" />
+      <workItem from="1590971468107" duration="2340000" />
+      <workItem from="1590975982504" duration="9662000" />
+      <workItem from="1590995332544" duration="104000" />
+      <workItem from="1590995490430" duration="6593000" />
+      <workItem from="1591057663998" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="TEST">
       <created>1590112286755</created>
@@ -116,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590117931237</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Some edits in the second review">
+      <created>1590137161286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590137161286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,9 +206,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TEST" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEST" />
+    <MESSAGE value="Some edits in the second review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some edits in the second review" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="413" y="244" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590741195771">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="413" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.826@0.23.1440.826" timestamp="1590741195771" />
     <state x="0" y="196" key="#xdebugger.XInspectDialog" timestamp="1590131713579">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -147,50 +222,73 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="483" y="147" key="#xdebugger.evaluate/0.23.1440.827@0.23.1440.827" timestamp="1590127001129" />
-    <state x="279" y="23" key="CommitChangelistDialog2" timestamp="1590130827564">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="279" y="23" key="CommitChangelistDialog2" timestamp="1590137161084">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state x="279" y="23" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1590137161084" />
     <state x="279" y="23" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1590130827564" />
     <state x="0" y="123" width="1240" height="626" key="DiffContextDialog" timestamp="1590132332920">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="0" y="123" width="1240" height="626" key="DiffContextDialog/0.23.1440.826@0.23.1440.826" timestamp="1590132332920" />
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1590127062967">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1590147665667">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1590147665667" />
     <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1590127062967" />
-    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1590127062967">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1590147665666">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1590147665666" />
     <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1590127062967" />
-    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1590127062966">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1590147665665">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1590147665665" />
     <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1590127062966" />
-    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1590127062967">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1590147665666">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1590147665666" />
     <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1590127062967" />
-    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1590127062968">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1590147665668">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.826@0.23.1440.826" timestamp="1590147665668" />
     <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1590127062968" />
-    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1590127062968">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1590147665667">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.826@0.23.1440.826" timestamp="1590147665667" />
     <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1590127062968" />
-    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1590127062967">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1590147665667">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.826@0.23.1440.826" timestamp="1590147665667" />
     <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1590127062967" />
-    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1590127062968">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1590147665667">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
+    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1590147665667" />
     <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1590127062968" />
-    <state width="720" height="412" key="XDebugger.FullValuePopup" timestamp="1590127297384">
+    <state x="451" y="162" key="RollbackChangesDialog" timestamp="1590720894830">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="720" height="412" key="XDebugger.FullValuePopup/0.23.1440.827@0.23.1440.827" timestamp="1590127297384" />
+    <state x="451" y="162" key="RollbackChangesDialog/0.23.1440.827@0.23.1440.827" timestamp="1590720894830" />
+    <state x="60" y="72" key="SettingsEditor" timestamp="1590991544012">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="60" y="72" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1590991544012" />
+    <state width="720" height="413" key="XDebugger.FullValuePopup" timestamp="1591001128847">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="720" height="413" key="XDebugger.FullValuePopup/0.23.1440.826@0.23.1440.826" timestamp="1591001128847" />
+    <state width="720" height="412" key="XDebugger.FullValuePopup/0.23.1440.827@0.23.1440.827" timestamp="1590996767687" />
+    <state width="720" height="413" key="XDebugger.FullValuePopup/0.23.1440.828@0.23.1440.828" timestamp="1590733284337" />
+    <state x="385" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1591000071212">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="385" y="173" width="670" height="676" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1591000071212" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_$_.coverage" NAME="第六章 处理文本 Coverage Results" MODIFIED="1590127044224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

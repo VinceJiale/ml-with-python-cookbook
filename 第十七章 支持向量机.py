@@ -109,6 +109,7 @@ from sklearn.svm import SVC
 from sklearn import datasets
 from sklearn.preprocessing import StandardScaler
 import numpy as np
+
 iris = datasets.load_iris()
 features = iris.data
 target = iris.target
@@ -162,9 +163,9 @@ features = iris.data[:100, :]
 target = iris.target[:100]
 
 features = features[40:, :]     # 删除前40个观察值，让各个分类的数据分布不均衡
-target = target[40:, :]
+target = target[40:]
 
-target = np.where((target == 0, 0, 1))  # 创建目标向量
+target = np.where((target == 0), 0, 1) # 创建目标向量
 
 scaler = StandardScaler()               # 标准化
 features_standardized = scaler.fit_transform(features)

@@ -38,7 +38,6 @@ cv_results      # 查看10份数据的得分
 # 20%女性。这时候可以使用 StratifiedKFold 替换KFold 来使用分层k折交叉分析
 # 3）使用Hold-out或交叉验证时，应该基于训练集对数据进行预处理。然后将这些与转换同时应用于训练集和测试集。例如使用standardizer 对数据进行
 # 标准化时，我们只需要计算训练集的平均值和方差，然后将这个预处理转换（transform）同时应用于训练集和测试集
-
 from sklearn.model_selection import train_test_split
 # 创建训练集和测试集
 features_train, features_test, target_train, target_test = train_test_split(features, target, test_size=0.1, random_state=1)
@@ -223,7 +222,7 @@ cross_val_score(logit, features, target, scoring='f1_macro')    # 使用macro-F1
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn import datasets
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 import pandas as pd
@@ -425,7 +424,7 @@ plt.tight_layout()
 plt.legend(loc="best")
 plt.show()
 
-# 大多数算法丢包含超参数，而且必须在模型训练开始之前就选择好。
+# 大多数算法都包含超参数，而且必须在模型训练开始之前就选择好。
 # 随机森林的 超参数 为 ：Number of Trees。 大多数情况下，超参数的值是在模型选择阶段确定的。将模型性能与超参数画出来偶尔有用。
 # 当数的数量增加到250， 两个准确率分数都没什么变化，表明使用给更多计算资源训练大规模的随机森林可能并不能带来价值
 # scikit-learn 中， 我们可以使用 validation_curve 计算验证曲线

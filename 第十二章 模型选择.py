@@ -76,6 +76,7 @@ iris = datasets.load_iris()
 features = iris.data
 target = iris.target
 
+# GridSearchCV()
 pipe = Pipeline([("classifier", RandomForestClassifier())])  # 创建流水线
 
 search_space = [{"classifier": [LogisticRegression()],

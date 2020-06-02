@@ -61,7 +61,8 @@ knn.predict_proba(new_observation)      # 查看每个观察值分别属于3个�
 # 1)metric: 用来设定使用何种距离指标
 # 2)n_jobs: 控制可以使用多少个CPU核。做预测需要计算一个点到数据集中所有点的距离。所以建议使用多核
 # 3)algorithm: 用来设定计算最近邻居的算法,尽管不同的算法之间有很大的区别。KNeighborsClassifier 默认自动选择最合适的算法，一般不用为这个参数操心
-# 例如我们设定了weights参数,距离近的观察值的投票比距离远的观察值的投票会有更高的权重。    标准化特征在使用KNN分类器之前 非常重要
+# 但是如果我们给distance设定了weights参数,距离近的观察值的投票比距离远的观察值的投票会有更高的权重。
+# 因为计算距离时,所有特征被认为是在同一单位下的,所有标准化特征在使用KNN分类器之前 非常重要
 
 # 15.3 确定最佳的邻域点集的大小
 from sklearn.neighbors import KNeighborsClassifier

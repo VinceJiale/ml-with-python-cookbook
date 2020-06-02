@@ -20,7 +20,7 @@ features_high_variance[0:3]     # 显示大方差特征矩阵
 # 方差阈值化(Variance Thresholding, VT) 是最基本的特征选择方法之一。依据是 小方差的特征可能比大方差的特征的重要性低一些。
 # VT 方法的第一步是计算每个特征的方差   算出方差后，方差低于阈值的特征会被丢弃。
 # 注意两点：1)方差不是中心化的(单位是特征单位的平方)因此,如果特征数据集中特征的单位不同(例如一个是以年为单位，一个是以美元为单位)那么VT就无法起作用。
-# 2) 方差的阈值是手动选择的，所以必须依靠人工来选择一个合适的阈值(或者使用第12章的模型选择方法)。可以挺过参数variances_来查看每个特征的方差
+# 2) 方差的阈值是手动选择的，所以必须依靠人工来选择一个合适的阈值(或者使用第12章的模型选择方法)。可以通过参数variances_来查看每个特征的方差
 thresholder.fit(features).variances_
 
 # 如果特征已经标准化, 则方差阈值将起不到筛选的作用 因为此时平均数为0，方差为1
@@ -77,9 +77,9 @@ dataframe.corr()        # 相关矩阵
 upper       # 相关矩阵的上三角阵
 # 最后从每一对高度相关的特征中删除一个
 
+
+
 # 10.4 删除与分类任务不相关的特征
-
-
 from sklearn.datasets import load_iris
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2, f_classif
